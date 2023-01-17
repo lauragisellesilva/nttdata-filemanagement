@@ -1,6 +1,6 @@
 ﻿namespace NttData.FileManagement.Presentation.WinSite
 {
-    partial class Form1
+    partial class frmStudent
     {
         /// <summary>
         /// Variable del diseñador necesaria.
@@ -28,13 +28,95 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmStudent));
+            this.lblId = new System.Windows.Forms.Label();
+            this.lblName = new System.Windows.Forms.Label();
+            this.lblSurname = new System.Windows.Forms.Label();
+            this.lblBirthday = new System.Windows.Forms.Label();
+            this.txtId = new System.Windows.Forms.TextBox();
+            this.txtName = new System.Windows.Forms.TextBox();
+            this.txtSurname = new System.Windows.Forms.TextBox();
+            this.txtBirthday = new System.Windows.Forms.TextBox();
+            this.btnSave = new System.Windows.Forms.Button();
+            this.SuspendLayout();
+            // 
+            // lblId
+            // 
+            resources.ApplyResources(this.lblId, "lblId");
+            this.lblId.Name = "lblId";
+            // 
+            // lblName
+            // 
+            resources.ApplyResources(this.lblName, "lblName");
+            this.lblName.Name = "lblName";
+            // 
+            // lblSurname
+            // 
+            resources.ApplyResources(this.lblSurname, "lblSurname");
+            this.lblSurname.Name = "lblSurname";
+            // 
+            // lblBirthday
+            // 
+            resources.ApplyResources(this.lblBirthday, "lblBirthday");
+            this.lblBirthday.Name = "lblBirthday";
+            // 
+            // txtId
+            // 
+            resources.ApplyResources(this.txtId, "txtId");
+            this.txtId.Name = "txtId";
+            // 
+            // txtName
+            // 
+            resources.ApplyResources(this.txtName, "txtName");
+            this.txtName.Name = "txtName";
+            // 
+            // txtSurname
+            // 
+            resources.ApplyResources(this.txtSurname, "txtSurname");
+            this.txtSurname.Name = "txtSurname";
+            // 
+            // txtBirthday
+            // 
+            resources.ApplyResources(this.txtBirthday, "txtBirthday");
+            this.txtBirthday.Name = "txtBirthday";
+            // 
+            // btnSave
+            // 
+            resources.ApplyResources(this.btnSave, "btnSave");
+            this.btnSave.Name = "btnSave";
+            this.btnSave.UseVisualStyleBackColor = true;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
+            // 
+            // frmStudent
+            // 
+            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "Form1";
+            this.Controls.Add(this.btnSave);
+            this.Controls.Add(this.txtBirthday);
+            this.Controls.Add(this.txtSurname);
+            this.Controls.Add(this.txtName);
+            this.Controls.Add(this.txtId);
+            this.Controls.Add(this.lblBirthday);
+            this.Controls.Add(this.lblSurname);
+            this.Controls.Add(this.lblName);
+            this.Controls.Add(this.lblId);
+            this.Name = "frmStudent";
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
         }
 
         #endregion
+
+        private System.Windows.Forms.Label lblId;
+        private System.Windows.Forms.Label lblName;
+        private System.Windows.Forms.Label lblSurname;
+        private System.Windows.Forms.Label lblBirthday;
+        private System.Windows.Forms.TextBox txtId;
+        private System.Windows.Forms.TextBox txtName;
+        private System.Windows.Forms.TextBox txtSurname;
+        private System.Windows.Forms.TextBox txtBirthday;
+        private System.Windows.Forms.Button btnSave;
     }
 }
 
