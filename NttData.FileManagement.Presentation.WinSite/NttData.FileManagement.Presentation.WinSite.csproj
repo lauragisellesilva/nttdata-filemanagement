@@ -76,5 +76,15 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\NttData.FileManagement.Business.Logic\NttData.FileManagement.Business.Logic.csproj">
+      <Project>{0492150b-660c-4205-83dc-8918224fc591}</Project>
+      <Name>NttData.FileManagement.Business.Logic</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\NttData.FileManagement.Common.Model\NttData.FileManagement.Common.Model.csproj">
+      <Project>{e790a725-d089-4a4e-a241-9769dbaf1e78}</Project>
+      <Name>NttData.FileManagement.Common.Model</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
