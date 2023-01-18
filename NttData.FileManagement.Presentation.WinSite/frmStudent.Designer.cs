@@ -101,6 +101,7 @@
             this.Controls.Add(this.lblName);
             this.Controls.Add(this.lblId);
             this.Name = "frmStudent";
+            this.Load += new System.EventHandler(this.frmStudent_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
